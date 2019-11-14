@@ -1,8 +1,8 @@
-#include "Maze.h"
+п»ї#include "Maze.h"
 #include <random>
 #include <Windows.h>
 
-const char Maze::errors[2][30] = { "Выход за пределы массива","ed" };
+const char Maze::errors[2][30] = { "Р’С‹С…РѕРґ Р·Р° РїСЂРµРґРµР»С‹ РјР°СЃСЃРёРІР°","ed" };
 Maze::Maze() {
 	field = 0;
 	SetSize(35, 51);
@@ -53,11 +53,11 @@ void Maze::randomFill(unsigned int _srand) {
 	int counter=0;
 	bool stop = true;
 	srand(_srand);
-	// очистка
+	// РѕС‡РёСЃС‚РєР°
 	for (int i = 0; i < widthF*heightF; i++) {
 		field[i] = fldType::WALL;
 	}
-	// заполнение
+	// Р·Р°РїРѕР»РЅРµРЅРёРµ
 	while (stop) {
 		target = rand() % 4;
 		switch (target) {
