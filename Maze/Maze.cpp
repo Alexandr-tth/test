@@ -5,7 +5,7 @@
 const char Maze::errors[2][30] = { "Выход за пределы массива","ed" };
 Maze::Maze() {
 	field = 0;
-	SetSize(51, 51);
+	SetSize(35, 51);
 	SetField(5, 5, fldType::WALL);
 	SetField(6, 5, fldType::WALL);
 }
